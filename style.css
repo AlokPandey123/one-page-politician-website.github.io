@@ -1,0 +1,335 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(30deg,rgb(191, 5, 5),rgb(39, 39, 194),rgb(212, 212, 38),rgb(7, 216, 168));
+    background-size: 300% 300%;
+    animation: background-color 5s ease-in-out infinite;
+    overflow-x: hidden;
+}
+/* animation for background */
+@keyframes background-color{
+    0%{background-position: 0% 50%;}
+    100%{background-position: 100% 50%;}
+}
+.head{
+    background: linear-gradient(to bottom,rgb(232, 59, 59),white,green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    justify-content: space-between;
+    padding: 40px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 800;
+}
+.current,nav ul li a:hover{
+    background-color: aqua;
+    border-radius: 10px;
+   
+}
+
+.logo{
+    background-image: url("./img/navBackground.jpg");
+    padding: 33px;
+    margin-left: 20px;
+    background-size: cover;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 50px;
+    animation: colors 5s ease-in-out infinite;
+    
+}
+/* animation for logo content color */
+@keyframes colors{
+    0%{color: red;}
+    25%{ color: aqua;}
+    50%{color: rgb(236, 242, 236);}
+    75%{color: yellow;}
+    100%{color: rgb(235, 142, 12);}
+}
+.main1{
+    height: 86%;
+    width: 80%;
+    margin: auto;
+    border: 20px solid rgb(7, 164, 212);
+    position: relative;
+}
+.content{
+    height: 100%;
+    
+    margin: auto;
+    background-color: azure;
+    background-image: url("./img/OIP.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+    animation: change 10s infinite ease-in-out;
+    animation-duration: normal;
+   
+    text-align: center;
+}
+/* animation for hero section and in hero section image changing*/
+@keyframes change{
+    10%{background-image: url("./img/13ss5.jpg");}
+    50%{background-image: url("./img/be955ddb745e805da3ddd9b5870485cd.jpg");}
+    80%{background-image: url("./img/modi_pti_1-647x363.webp")}
+
+}
+.text{
+    position: absolute;
+    top: 80%;
+    width: 90%;
+    left: 5%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-text-stroke-color: rgb(0, 255, 81);
+    -webkit-text-stroke-width: 1px;
+}
+.heading1
+{   
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: aqua;
+}
+.heading1 a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    max-width: 100%;
+    height: 400px;
+    margin: 30px auto;
+    background-color: rgb(0, 225, 255);
+    overflow: auto;
+}
+.gal1{
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    width: 363.5px;
+    
+}
+.Himg{
+    width: 100%;
+    height: 250px;
+}
+.desc{
+    padding: 15px;
+   
+    background-color: white;
+}
+.main4{
+    
+    
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    
+}
+.image{
+    margin: 10px;
+   height: 100%;
+   width: 100%;
+  
+}
+.navimg{
+    display: flex;
+}
+.navimg img{
+    height: 40px;
+    margin: 20px;
+}
+.navimg{
+    display: none;
+}
+/* use of media quary for making website responsive */
+@media screen and (max-width: 1500px){
+    .main1{
+       
+        width: 100%;
+       
+    }
+    .main .gal1 .desc{
+        font-size: 20px;
+    }
+
+    .ram{
+        height: 150px;
+        
+    }
+    .gal1{
+        width: 24.3%;
+        margin: 3px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .main1{
+       
+        width: 100%;
+       
+    }
+    .main .gal1 .desc{
+        font-size: 20px;
+    }
+
+    .ram{
+        height: 150px;
+        
+    }
+    .gal1{
+        width: 24.3%;
+        margin: 3px;
+    }
+}
+@media screen and (max-width: 992px){
+   
+    .gal1{
+        width: 48%;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .text{
+        top: 70%;
+        width: 100%;
+        left: 0%;
+    }
+    .image1,.image8,.image3{
+        display: none;
+    }
+    nav ul li {
+        padding: 20px;
+        
+    }
+    .logo{
+       
+        padding: 20px;
+       
+        
+    }
+}
+@media screen and (max-width: 600px){
+   
+    nav ul li {
+        padding: 8px;
+        
+    }
+    .logo{
+        font-size: 20px;
+        padding: 15px;
+        margin: 10px;
+       
+        
+    }
+    nav ul li a{
+        padding: 6px;
+    }
+
+    .main1{
+        height: 70%;
+        width: 100%;
+        margin: auto;
+        border: 10px solid rgb(7, 164, 212);
+       
+    }
+    .text{
+       
+        top: 70%;
+        width: 100%;
+        left: 0%;
+        font-size: 30px;
+        font-weight: bold;
+        
+    }
+    .heading1
+{   
+    
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: aqua;
+}
+.main4{
+    
+    
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    
+}
+   
+}
+@media screen and (max-width: 400px){
+    nav ul li {
+        padding: 5px;
+        
+    }
+    .logo{
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+       
+        
+    }
+    
+
+    .main1{
+        height: 60%;
+        width: 100%;
+    }
+    .text{
+       
+        top: 70%;
+       
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+    .heading1
+{   
+    
+    
+    font-size: 20px;
+   
+}
+
+}
